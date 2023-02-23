@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(122, 122, 122);
+}
+
+.main {
+    max-width: 600px;
+    border: 1px solid rgb(122, 122, 122);
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 32;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#current-temp {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.weatherIcon {
+    position: relative;
+    margin-bottom: 34px;
+    margin-right: 10px;
+}
+
+#temp {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.units {
+    position: relative;
+    top: -32px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 19px;
+    line-height: 1.1;
+}
+
+#weatherClasses {
+    padding-left: 0;    
+}
+
+.btn-group {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    font-size: 12px;
+    
+}
+
+.search-bar {
+    margin: 20px;
+}
+
