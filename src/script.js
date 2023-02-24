@@ -1,9 +1,11 @@
-
-
-
-
-
-
+function formatDate(timestamp) {
+    let date = new Date(timestamp);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let day = date.getDay();
+    
+    return `${day} ${hours}:${minutes}`;
+    }
 
 function displayTemperature(response) {
     let temperatureElement = document.querySelector("#now-temp");
