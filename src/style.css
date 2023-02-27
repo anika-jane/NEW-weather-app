@@ -68,3 +68,7 @@ ul {
 #git {
     margin: 0 auto;
 }
+
+.weather-forecaste-temperature-max {
+    font-weight: 600;
+}
