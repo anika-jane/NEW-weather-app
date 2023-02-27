@@ -57,6 +57,12 @@ function showFahrenheitTemp(event) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
+function showCelsiusTemp(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#now-temp");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -64,5 +70,9 @@ form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheitLink");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsiusLink");
+celsiusLink.addEventListener("click", showCelsiusTemp);
+
 
 search("Waterloo");
