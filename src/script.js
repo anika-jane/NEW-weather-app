@@ -49,7 +49,8 @@ function handleSubmit(event) {
 
 function showFahrenheitTemp(event) {
     event.preventDefault();
-    alert("Link Clicked");
+    let fahrenheitTemp = (14 * 9) / 5 + 32;
+    alert(fahrenheitTemp);
 }
 
 let form = document.querySelector("#search-form");
