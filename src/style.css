@@ -26,10 +26,8 @@ h1 {
 }
 
 .weatherIcon {
-    position: relative;
-    top: -25;
-    line-height: 1;
-    margin-right: 10px;
+        margin-right: 10px;
+        line-height: 1;
 }
 
 #now-temp {
