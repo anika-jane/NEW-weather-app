@@ -24,7 +24,10 @@ function displayTemperature(response) {
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#current-date-time");
     let iconElement =  document.querySelector("#icon");
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+    celsiusTemperature = response.data.main.temp;
+
+    temperatureElement.innerHTML = Math.round(celciusTemperature);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
@@ -49,11 +52,12 @@ function handleSubmit(event) {
 
 function showFahrenheitTemp(event) {
     event.preventDefault();
-    let fahrenheitTemp = (14 * 9) / 5 + 32;
-    alert(fahrenheitTemp);
+    let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
     let temperatureElement = document.querySelector("#now-temp");
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
