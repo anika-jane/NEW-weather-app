@@ -41,15 +41,23 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 axios.get(apiUrl).then(displayTemperature);
 }
 
-
 function handleSubmit(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#city-input");
     search(cityInput.value);
 }
 
-search("New York");
+function showFahrenheightTemp(event) {
+    event.preventDefault();
+    let fahrenheitTemperature = (14 * 9) / 5 + 32;
+    let temperatureElement = ("#now-temp");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+search("Waterloo");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
+let fahrenheitLink = document.querySelector("#fahrenheitLink");
+fahrenheitLink.addEventListener("click", showFahrenheightTemp);
