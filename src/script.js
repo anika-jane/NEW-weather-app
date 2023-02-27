@@ -47,17 +47,15 @@ function handleSubmit(event) {
     search(cityInput.value);
 }
 
-function showFahrenheightTemp(event) {
+function showFahrenheitTemp(event) {
     event.preventDefault();
-    let fahrenheitTemperature = (14 * 9) / 5 + 32;
-    let temperatureElement = ("#now-temp");
-    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+    alert("Link Clicked");
 }
-
-search("Waterloo");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheitLink");
-fahrenheitLink.addEventListener("click", showFahrenheightTemp);
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+search("Waterloo");
