@@ -117,4 +117,4 @@ let celsiusLink = document.querySelector("#celsiusLink");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 
-search("Waterloo");
+search("Toronto");
