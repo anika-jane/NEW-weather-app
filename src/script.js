@@ -51,6 +51,8 @@ function showFahrenheitTemp(event) {
     event.preventDefault();
     let fahrenheitTemp = (14 * 9) / 5 + 32;
     alert(fahrenheitTemp);
+    let temperatureElement = document.querySelector("#now-temp");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
 let form = document.querySelector("#search-form");
