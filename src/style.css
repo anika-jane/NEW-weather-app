@@ -69,6 +69,7 @@ ul {
     margin: 0 auto;
 }
 
-.weather-forecaste-temperature-max {
-    font-weight: 600;
+.weather-forecast-temperature-max {
+    font-weight: 700;
+    color: black;
 }
