@@ -28,6 +28,7 @@ h1 {
 .weatherIcon {
     position: relative;
     top: -25;
+    line-height: 1;
     margin-right: 10px;
 }
 
